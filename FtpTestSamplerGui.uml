@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.jmeter.protocol.ftp.control.gui.FtpTestSamplerGui</OriginalElement>
+  <nodes>
+    <node x="682.775" y="0.0">java.lang.Cloneable</node>
+    <node x="93.13611111111106" y="288.0">org.apache.jmeter.gui.AbstractJMeterGuiComponent</node>
+    <node x="638.625" y="192.0">org.apache.jmeter.testelement.AbstractTestElement</node>
+    <node x="16.524999999999977" y="192.0">org.apache.jmeter.gui.JMeterGUIComponent</node>
+    <node x="253.99999999999997" y="384.0">org.apache.jmeter.samplers.gui.AbstractSamplerGui</node>
+    <node x="673.275" y="96.0">org.apache.jmeter.testelement.TestElement</node>
+    <node x="581.5111111111111" y="384.0">org.apache.jmeter.protocol.ftp.sampler.FTPSampler</node>
+    <node x="402.525" y="96.0">java.io.Serializable</node>
+    <node x="258.5" y="480.0">org.apache.jmeter.protocol.ftp.control.gui.FtpTestSamplerGui</node>
+    <node x="560.5111111111111" y="288.0">org.apache.jmeter.samplers.AbstractSampler</node>
+    <node x="0.0" y="384.0">org.apache.jmeter.config.gui.AbstractConfigGui</node>
+    <node x="472.625" y="192.0">org.apache.jmeter.samplers.Sampler</node>
+    <node x="303.525" y="192.0">javax.swing.JPanel</node>
+    <node x="76.02499999999998" y="96.0">org.apache.jmeter.gui.ClearGui</node>
+    <node x="22.0" y="480.0">org.apache.jmeter.protocol.ftp.config.gui.FtpConfigGui</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.jmeter.protocol.ftp.sampler.FTPSampler" target="org.apache.jmeter.samplers.AbstractSampler">
+      <point x="0.0" y="-23.0" />
+      <point x="0.0" y="23.0" />
+    </edge>
+    <edge source="org.apache.jmeter.testelement.AbstractTestElement" target="org.apache.jmeter.testelement.TestElement">
+      <point x="63.25" y="-23.0" />
+      <point x="828.375" y="172.0" />
+      <point x="808.275" y="172.0" />
+      <point x="45.0" y="23.0" />
+    </edge>
+    <edge source="javax.swing.JPanel" target="java.io.Serializable">
+      <point x="0.0" y="-23.0" />
+      <point x="368.025" y="172.0" />
+      <point x="431.3583333333333" y="172.0" />
+      <point x="-57.666666666666686" y="23.0" />
+    </edge>
+    <edge source="org.apache.jmeter.gui.JMeterGUIComponent" target="org.apache.jmeter.gui.ClearGui">
+      <point x="0.0" y="-23.0" />
+      <point x="0.0" y="23.0" />
+    </edge>
+    <edge source="org.apache.jmeter.samplers.AbstractSampler" target="org.apache.jmeter.samplers.Sampler">
+      <point x="-54.75" y="-23.0" />
+      <point x="615.2611111111111" y="263.0" />
+      <point x="545.625" y="263.0" />
+      <point x="0.0" y="23.0" />
+    </edge>
+    <edge source="org.apache.jmeter.config.gui.AbstractConfigGui" target="org.apache.jmeter.gui.AbstractJMeterGuiComponent">
+      <point x="0.0" y="-23.0" />
+      <point x="117.0" y="359.0" />
+      <point x="177.63611111111106" y="359.0" />
+      <point x="-84.5" y="23.0" />
+    </edge>
+    <edge source="org.apache.jmeter.gui.AbstractJMeterGuiComponent" target="org.apache.jmeter.gui.JMeterGUIComponent">
+      <point x="-84.5" y="-23.0" />
+      <point x="177.63611111111106" y="263.0" />
+      <point x="150.02499999999998" y="263.0" />
+      <point x="0.0" y="23.0" />
+    </edge>
+    <edge source="org.apache.jmeter.protocol.ftp.config.gui.FtpConfigGui" target="org.apache.jmeter.config.gui.AbstractConfigGui">
+      <point x="0.0" y="-23.0" />
+      <point x="0.0" y="23.0" />
+    </edge>
+    <edge source="org.apache.jmeter.testelement.TestElement" target="java.lang.Cloneable">
+      <point x="0.0" y="-23.0" />
+      <point x="0.0" y="23.0" />
+    </edge>
+    <edge source="org.apache.jmeter.gui.AbstractJMeterGuiComponent" target="javax.swing.JPanel">
+      <point x="84.5" y="-23.0" />
+      <point x="346.63611111111106" y="263.0" />
+      <point x="368.025" y="263.0" />
+      <point x="0.0" y="23.0" />
+    </edge>
+    <edge source="org.apache.jmeter.testelement.AbstractTestElement" target="java.io.Serializable">
+      <point x="-63.25" y="-23.0" />
+      <point x="701.875" y="162.0" />
+      <point x="546.6916666666666" y="162.0" />
+      <point x="57.66666666666663" y="23.0" />
+    </edge>
+    <edge source="org.apache.jmeter.protocol.ftp.control.gui.FtpTestSamplerGui" target="org.apache.jmeter.samplers.gui.AbstractSamplerGui">
+      <point x="0.0" y="-23.0" />
+      <point x="0.0" y="23.0" />
+    </edge>
+    <edge source="org.apache.jmeter.samplers.AbstractSampler" target="org.apache.jmeter.testelement.AbstractTestElement">
+      <point x="54.75" y="-23.0" />
+      <point x="724.7611111111111" y="263.0" />
+      <point x="765.125" y="263.0" />
+      <point x="0.0" y="23.0" />
+    </edge>
+    <edge source="org.apache.jmeter.samplers.Sampler" target="java.io.Serializable">
+      <point x="-36.5" y="-23.0" />
+      <point x="509.125" y="172.0" />
+      <point x="489.025" y="172.0" />
+      <point x="0.0" y="23.0" />
+    </edge>
+    <edge source="org.apache.jmeter.samplers.Sampler" target="org.apache.jmeter.testelement.TestElement">
+      <point x="36.5" y="-23.0" />
+      <point x="582.125" y="172.0" />
+      <point x="718.275" y="172.0" />
+      <point x="-45.0" y="23.0" />
+    </edge>
+    <edge source="org.apache.jmeter.samplers.gui.AbstractSamplerGui" target="org.apache.jmeter.gui.AbstractJMeterGuiComponent">
+      <point x="0.0" y="-23.0" />
+      <point x="378.0" y="359.0" />
+      <point x="346.63611111111106" y="359.0" />
+      <point x="84.5" y="23.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="446.0" y="263.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
