@@ -1,17 +1,18 @@
 package org.apache.jmeter.protocol.jedis.control.gui;
 
 import org.apache.jmeter.gui.util.VerticalPanel;
-import org.apache.jmeter.protocol.jedis.config.gui.JedisConfigGui;
+import org.apache.jmeter.protocol.jedis.config.gui.JedisPoolConfigGui;
 import org.apache.jmeter.protocol.jedis.sampler.JedisSampler;
 import org.apache.jmeter.samplers.gui.AbstractSamplerGui;
 import org.apache.jmeter.testelement.TestElement;
 
+import javax.swing.*;
 import java.awt.*;
 
 public class JedisTestSamplerGui extends AbstractSamplerGui {
     private static final long serialVersionUID = 240L;
 
-    private JedisConfigGui jedisConfigGui;
+    private JedisPoolConfigGui jedisConfigGui;
 
     public JedisTestSamplerGui() {
         init();
@@ -57,15 +58,16 @@ public class JedisTestSamplerGui extends AbstractSamplerGui {
         return "jedis_test_sampler_config"; // $NON-NLS-1$
     }
 
-    private void init() { // WARNING: called from ctor so must not be overridden (i.e. must be private or final)
-        setLayout(new BorderLayout(0, 5));
-        setBorder(makeBorder());
 
-        add(makeTitlePanel(), BorderLayout.NORTH);
+    private void init() { // WARNING: called from ctor so must not be overridden (i.e. must be private or final)
+        setLayout(new BorderLayout(0, 0));
+//        setBorder(makeBorder());
+
+//        add(makeTitlePanel(), BorderLayout.NORTH);
 
         VerticalPanel mainPanel = new VerticalPanel();
 
-        jedisConfigGui = new JedisConfigGui();
+        jedisConfigGui = new JedisPoolConfigGui();
         mainPanel.add(jedisConfigGui);
 
         add(mainPanel, BorderLayout.CENTER);

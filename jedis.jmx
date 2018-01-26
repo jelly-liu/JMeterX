@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jmeterTestPlan version="1.2" properties="3.2" jmeter="3.3">
   <hashTree>
-    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="测试计划" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
       <boolProp name="TestPlan.functional_mode">false</boolProp>
       <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
-      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
       <stringProp name="TestPlan.user_define_classpath"></stringProp>
@@ -29,12 +29,14 @@
         <JedisSampler guiclass="JedisTestSamplerGui" testclass="JedisSampler" testname="Jedis Test Sampler Configs" enabled="true">
           <stringProp name="jedis.ip">192.168.1.107</stringProp>
           <stringProp name="jedis.port">7379</stringProp>
-          <stringProp name="jedis.connectTimeout">3000</stringProp>
-          <stringProp name="jedis.soTimeout">5000</stringProp>
+          <stringProp name="jedis.connectTimeout">1000</stringProp>
+          <stringProp name="jedis.soTimeout">1000</stringProp>
           <stringProp name="jedis.maxConnection">1000</stringProp>
-          <stringProp name="jedis.maxIdle">300</stringProp>
+          <stringProp name="jedis.maxIdle">200</stringProp>
           <stringProp name="jedis.auth">Ybzh1onzk1az</stringProp>
-          <stringProp name="jedis.key"></stringProp>
+          <stringProp name="jedis.key">${__RandomString(32,abcdefghijklmnopqrstuvwxyz)}</stringProp>
+          <stringProp name="jedis.value">${__RandomString(128,abcdefghijklmnopqrstuvwxyz)}</stringProp>
+          <stringProp name="jedis.optType">DEL</stringProp>
         </JedisSampler>
         <hashTree/>
         <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
@@ -75,7 +77,7 @@
         <hashTree/>
       </hashTree>
     </hashTree>
-    <WorkBench guiclass="WorkBenchGui" testclass="WorkBench" testname="WorkBench" enabled="true">
+    <WorkBench guiclass="WorkBenchGui" testclass="WorkBench" testname="工作台" enabled="true">
       <boolProp name="WorkBench.save">true</boolProp>
     </WorkBench>
     <hashTree/>
